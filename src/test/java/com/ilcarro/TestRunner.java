@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         glue = "com/ilcarro/stepDefinitions",
         //если нужно запустить только один какой то сценарий
         //tags = " @wrongPassword",
-        tags = "@addcar",
+        //tags = "@addcar",
         plugin = {"pretty","json:build/cucumber-report/cucumber.json"})
 
 public class TestRunner {
