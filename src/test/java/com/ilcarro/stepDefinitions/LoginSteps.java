@@ -4,13 +4,29 @@ import com.ilcarro.pages.HomePage;
 import com.ilcarro.pages.LoginPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static com.ilcarro.pages.BasePage.driver;
 
 public class LoginSteps {
 
     LoginPage login;
+
+   /* @Given("User is logged in")
+    public void userIsLoggedIn() {
+
+        driver = new ChromeDriver();
+
+        HomePage homePage = new HomePage(driver);
+        homePage.openUrl();
+        homePage.clickOnLoginLink();
+
+        login = new LoginPage(driver);
+        login.enterData("test222@gmail.com", "Test12345!");
+        login.clickOnYalla();
+    } */
 
     @And("User clicks on Login link")
     public void click_On_Login_Link(){

@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features",
         glue = "com/ilcarro/stepDefinitions",
         //если нужно запустить только один какой то сценарий
-        tags = " @wrongPassword",
+        //tags = " @wrongPassword",
+        tags = "@addcar",
         plugin = {"pretty","json:build/cucumber-report/cucumber.json"})
 
 public class TestRunner {
